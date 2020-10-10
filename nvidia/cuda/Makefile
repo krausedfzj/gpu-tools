@@ -1,7 +1,7 @@
 
 # Path to a minipmi installation (see github.com/kraused/minipmi)
 MINIPMI  = $(PWD)/minipmi
-# Patch to the CUDA installation. This is system dependent
+# Path to the CUDA installation. This is system dependent
 CUDA     = $(shell ${LMOD_CMD} load intel-para CUDA | sed -n -e 's/EBROOTCUDA="\(.*\)";/\1/p')
 
 CC       = gcc
